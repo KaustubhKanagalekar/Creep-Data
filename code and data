@@ -1,0 +1,16 @@
+Data parameters
+Time = [0:2:34]
+Strain = [0, 0.22, 0.34, 0.41, 0.48, 0.55, 0.62, 0.68, 0.75, 0.82, 0.88, 0.95, 1.03, 1.12, 1.22, 1.36,1.53, 1.77]
+This code will graph Time vs. Strain
+plot(Time, Strain)
+xlabel("Time (min)")
+ylabel("Strain")
+title("Plot of Time vs. Strain")
+This code will find the steady-state rate- taken from the linear part of the slope
+x2 = 28
+x1 = 4
+y2 = 1.22
+y1 = 0.34
+
+steady_state_rate = (y2-y1)/(x2-x1)
+% The steady state rate is about 0.0367 1/min
